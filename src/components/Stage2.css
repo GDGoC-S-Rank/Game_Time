@@ -5,17 +5,32 @@
   justify-content: center;
   align-items: center;
   background-color: darkblue;
+  overflow: hidden;
+  z-index: -30;
 }
 
-.screenArea {
-  width: auto; /* 부모 요소에 맞게 크기 조정 */
-  height: 90%; /* 비율 유지 */
+/* 애니메이션 오른쪽 아래로 내려가야 한다 */
+.heartBg {
+  position: absolute; /* 부모 요소(stage1-container)를 기준으로 배치 */
+  bottom: 0%;
+  left: -60%;
+
+  width: 150%;
+  height: 200%; /* 비율 유지 */
+  z-index: 0; /* screenBorder 뒤에 배치 */
 }
 
-.hsBg {
-  position: absolute; /* screenArea 위에 겹치도록 설정 */
+.hfloor {
+  position: absolute;
+  top: -10px;
+  left: 70px;
+  width: auto;
+  height: 100%;
+  z-index: 1;
+}
 
-  width: 50%; /* screenArea와 동일한 크기 */
-  height: 50%; /* screenArea와 동일한 크기 */
-  object-fit: cover; /* 이미지 비율 유지하며 영역 채우기 */
+.screenBorder {
+  width: auto;
+  height: 100%;
+  z-index: 2;
 }

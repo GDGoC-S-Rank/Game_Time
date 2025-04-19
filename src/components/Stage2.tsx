@@ -1,13 +1,15 @@
 import "./Stage2.css";
-import screenArea from "../resources/images/black.png";
-import hsBg from "../resources/images/hs/hbg.png";
+import screenBorder from "../resources/images/screenBorder.png";
+import heartBg from "../resources/images/hs/hbg.png";
+import hfloor from "../resources/images/hs/hfloor.png";
 
 // Heart Star
 export function Stage2() {
   return (
     <div className="stage2-container">
-      <img src={screenArea} alt="screenArea" className="screenArea" />
-      <img src={hsBg} alt="hsBg" className="hsBg" />
+      <img src={screenBorder} alt="screenBorder" className="screenBorder" />
+      <img src={hfloor} alt="hfloor" className="hfloor" />
+      <img src={heartBg} alt="heartBg" className="heartBg" />
     </div>
   );
 }

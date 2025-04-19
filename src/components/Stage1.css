@@ -4,10 +4,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: darkblue;
+  overflow: hidden;
+  z-index: -1;
 }
 
 .bgImage {
-  width: auto; /* 부모 요소에 맞게 크기 조정 */
-  height: 90%; /* 비율 유지 */
+  position: absolute; /* 부모 요소(stage1-container)를 기준으로 배치 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: auto; /* 비율 유지 */
+  z-index: 0; /* screenBorder 뒤에 배치 */
+}
+
+.screenBorder {
+  width: auto;
+  height: 100%;
+  z-index: 1;
 }

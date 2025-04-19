@@ -7,12 +7,15 @@
   background-color: darkblue;
 }
 
-.blackScreen {
+.screenArea {
   width: auto; /* 부모 요소에 맞게 크기 조정 */
   height: 90%; /* 비율 유지 */
 }
 
 .hsBg {
-  width: auto; /* 부모 요소에 맞게 크기 조정 */
-  height: 90%; /* 비율 유지 */
+  position: absolute; /* screenArea 위에 겹치도록 설정 */
+
+  width: 50%; /* screenArea와 동일한 크기 */
+  height: 50%; /* screenArea와 동일한 크기 */
+  object-fit: cover; /* 이미지 비율 유지하며 영역 채우기 */
 }

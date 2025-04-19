@@ -1,0 +1,13 @@
+.stage1-container {
+  width: 100vw; /* 화면 전체 너비 */
+  height: 100vh; /* 화면 전체 높이 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.bgImage {
+  width: auto; /* 부모 요소에 맞게 크기 조정 */
+  height: 90%; /* 비율 유지 */
+}

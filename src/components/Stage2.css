@@ -10,20 +10,30 @@
 }
 
 /* 애니메이션 오른쪽 아래로 내려가야 한다 */
+@keyframes moveDownRight {
+  0% {
+    transform: translate(0, 0); /* 초기 위치 */
+  }
+  100% {
+    transform: translate(780px, 780px); /* 아래와 오른쪽으로 이동 */
+  }
+}
+
 .heartBg {
   position: absolute; /* 부모 요소(stage1-container)를 기준으로 배치 */
   bottom: 0%;
   left: -60%;
-
   width: 150%;
   height: 200%; /* 비율 유지 */
   z-index: 0; /* screenBorder 뒤에 배치 */
+
+  animation: moveDownRight 3.7s linear infinite;
 }
 
 .hfloor {
   position: absolute;
-  top: -10px;
-  left: 70px;
+  top: 40px; /* 초기 위치 */
+  left: 70px; /* 초기 위치 */
   width: auto;
   height: 100%;
   z-index: 1;
@@ -33,4 +43,37 @@
   width: auto;
   height: 100%;
   z-index: 2;
+}
+
+.control_panel {
+  position: absolute;
+  width: 70.7%;
+  height: auto;
+  z-index: 3;
+  left: 230.3px;
+  top: 45px;
+}
+
+.control_1p {
+  position: absolute;
+  top: 45.2px;
+  left: 230.6px;
+  width: 70%;
+  height: auto;
+  z-index: 4;
+
+  opacity: 0; /* 처음에 투명 */
+  transition: opacity 0.5s; /* 추가: n초 동안 부드럽게 변화 */
+}
+
+.control_2p {
+  position: absolute;
+  top: 45.2px;
+  left: 430.6px;
+  width: 70%;
+  height: auto;
+  z-index: 4;
+
+  opacity: 0; /* 처음에 투명 */
+  transition: opacity 0.5s; /* 추가: n초 동안 부드럽게 변화 */
 }

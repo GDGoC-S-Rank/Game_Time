@@ -24,3 +24,20 @@
   height: 100%;
   z-index: 1;
 }
+
+/* control 부분 ------------------------------------ */
+.control_1p {
+  position: absolute;
+  top: 45.2px;
+  left: 230.6px;
+  width: 70%;
+  height: auto;
+  z-index: 1;
+
+  opacity: 0; /* 처음에 투명 */
+  transition: opacity 0.5s; /* 추가: n초 동안 부드럽게 변화 */
+}
+
+.control_1p.visible {
+  opacity: 1;
+}

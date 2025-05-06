@@ -1,17 +1,17 @@
 import { useEffect } from "react";
 
-export function useSpaceKeyEffect(onSpacePress: () => void) {
+export function useKeyEffect(onKeyPress: (key: string) => void) {
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.code === "Space") {
+      if (event.code === "Space" || event.code === "ArrowUp") {
         event.preventDefault(); // 🔴 기본 스크롤 동작 차단
-        onSpacePress();
+        onKeyPress(event.code); // 눌린 키를 콜백으로 전달
       }
     };
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [onSpacePress]);
+  }, [onKeyPress]);
 }
 
 // **의존성 배열**입니다.

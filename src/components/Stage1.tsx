@@ -3,15 +3,22 @@ import React, { useState, useEffect } from "react";
 import screenBorder from "../resources/images/screenBorder.png";
 import bgImage from "../resources/images/startScene/bg.png";
 import control_1p from "../resources/images/fontImg/minicube.png";
-import { useSpaceKeyEffect } from "../hooks/useSpaceKeyEffect";
+import { useKeyEffect } from "../hooks/useKeyEffect";
 
 // Start Scene(Space is key)
 export function Stage1() {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible_1p, setIsVisible_1p] = useState(false);
+  // const [isVisible_2p, setIsVisible_2p] = useState(false);
 
-  useSpaceKeyEffect(() => {
-    setIsVisible(true);
-    setTimeout(() => setIsVisible(false), 300);
+  useKeyEffect((key) => {
+    if (key === "Space") {
+      setIsVisible_1p(true);
+      setTimeout(() => setIsVisible_1p(false), 300);
+    }
+    // else if (key === "ArrowUp") {
+    //   setIsVisible_2p(true);
+    //   setTimeout(() => setIsVisible_2p(false), 300);
+    // }
   });
 
   return (
@@ -20,7 +27,7 @@ export function Stage1() {
       <img
         src={control_1p}
         alt="contral_1p"
-        className={`control_1p ${isVisible ? "visible" : ""}`}
+        className={`stage1_control_1p ${isVisible_1p ? "visible" : ""}`}
       />
       <img src={bgImage} alt="bg" className="bgImage" />
     </div>

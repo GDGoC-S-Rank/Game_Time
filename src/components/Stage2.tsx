@@ -6,15 +6,21 @@ import hfloor from "../resources/images/hs/hfloor.png";
 import control_panel from "../resources/images/fontImg/15.png";
 import control_1p from "../resources/images/fontImg/cube.png";
 import control_2p from "../resources/images/fontImg/exchangeRB.png";
-import { useSpaceKeyEffect } from "../hooks/useSpaceKeyEffect";
+import { useKeyEffect } from "../hooks/useKeyEffect";
 
 // Heart Star
 export function Stage2() {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible_1p, setIsVisible_1p] = useState(false);
+  const [isVisible_2p, setIsVisible_2p] = useState(false);
 
-  useSpaceKeyEffect(() => {
-    setIsVisible(true);
-    setTimeout(() => setIsVisible(false), 300);
+  useKeyEffect((key) => {
+    if (key === "Space") {
+      setIsVisible_1p(true);
+      setTimeout(() => setIsVisible_1p(false), 300);
+    } else if (key === "ArrowUp") {
+      setIsVisible_2p(true);
+      setTimeout(() => setIsVisible_2p(false), 300);
+    }
   });
 
   return (
@@ -26,12 +32,12 @@ export function Stage2() {
       <img
         src={control_1p}
         alt="control_1p"
-        className={`control_1p ${isVisible ? "visible" : ""}`}
+        className={`stage2_control_1p ${isVisible_1p ? "visible" : ""}`}
       />
       <img
         src={control_2p}
         alt="control_2p"
-        className={`control_2p ${isVisible ? "visible" : ""}`}
+        className={`stage2_control_2p ${isVisible_2p ? "visible" : ""}`}
       />
     </div>
   );

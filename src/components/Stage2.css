@@ -54,11 +54,11 @@
   top: 45px;
 }
 
-.control_1p {
+.stage2_control_1p {
   position: absolute;
-  top: 45.2px;
-  left: 230.6px;
-  width: 70%;
+  top: 44.5px;
+  left: 99.6px;
+  width: 71%;
   height: auto;
   z-index: 4;
 
@@ -66,14 +66,22 @@
   transition: opacity 0.5s; /* 추가: n초 동안 부드럽게 변화 */
 }
 
-.control_2p {
+.stage2_control_2p {
   position: absolute;
-  top: 45.2px;
-  left: 430.6px;
-  width: 70%;
+  top: 45.1px;
+  left: 227.2px;
+  width: 71%;
   height: auto;
   z-index: 4;
 
   opacity: 0; /* 처음에 투명 */
   transition: opacity 0.5s; /* 추가: n초 동안 부드럽게 변화 */
+}
+
+.stage2_control_1p.visible {
+  opacity: 1;
+}
+
+.stage2_control_2p.visible {
+  opacity: 1;
 }

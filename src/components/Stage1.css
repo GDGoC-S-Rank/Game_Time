@@ -26,10 +26,10 @@
 }
 
 /* control 부분 ------------------------------------ */
-.control_1p {
+.stage1_control_1p {
   position: absolute;
-  top: 45.2px;
-  left: 230.6px;
+  top: 45.8px;
+  left: 230.2px;
   width: 70%;
   height: auto;
   z-index: 1;
@@ -38,6 +38,6 @@
   transition: opacity 0.5s; /* 추가: n초 동안 부드럽게 변화 */
 }
 
-.control_1p.visible {
+.stage1_control_1p.visible {
   opacity: 1;
 }

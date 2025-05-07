@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 
+// 지속시간이 짧은 키 이펙트 ✨
 export function useKeyEffect(onKeyPress: (key: string) => void) {
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {

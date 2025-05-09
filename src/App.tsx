@@ -4,6 +4,7 @@ import { Stage1 } from "./components/Stage1";
 import { Stage2 } from "./components/Stage2";
 import { Stage3 } from "./components/Stage3";
 import { Stage4 } from "./components/Stage4";
+import { Stage5 } from "./components/Stage5";
 
 export default function App() {
   const [stage, setStage] = useState(1);
@@ -14,6 +15,7 @@ export default function App() {
       {stage === 2 && <Stage2 />}
       {stage === 3 && <Stage3 />}
       {stage === 4 && <Stage4 />}
+      {stage === 5 && <Stage5 />}
     </div>
   );
 }

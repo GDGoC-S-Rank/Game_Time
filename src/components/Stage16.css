@@ -1,0 +1,78 @@
+.stage16-container {
+  width: 100vw; /* 화면 전체 너비 */
+  height: 100vh; /* 화면 전체 높이 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkblue;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.stage16-bgImage {
+  position: absolute; /* 부모 요소(stage16-container)를 기준으로 배치 */
+  top: 49.8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70.3%;
+  height: auto; /* 비율 유지 */
+  z-index: 0; /* screenBorder 뒤에 배치 */
+}
+
+.stage16-bgImage2 {
+  position: absolute;
+  top: 51.1%;
+  left: 50.5%;
+  transform: translate(-50%, -50%);
+  width: 70.7%;
+  height: auto;
+  z-index: 0;
+}
+
+.screenBorder {
+  width: auto;
+  height: 100%;
+  z-index: 2;
+}
+
+/* control 부분 ------------------------------------ */
+.stage16_control_panel {
+  position: absolute;
+  width: 70%;
+  height: auto;
+  z-index: 3;
+  left: 230.3px;
+  top: 45px;
+}
+
+.stage16_control_1p {
+  position: absolute;
+  top: 45px;
+  left: 230.7px;
+  width: 70%;
+  height: auto;
+  z-index: 3;
+
+  opacity: 0; /* 처음에 투명 */
+  transition: opacity 0.5s; /* 추가: n초 동안 부드럽게 변화 */
+}
+
+.stage16_control_1p.visible {
+  opacity: 1;
+}
+
+.stage16_control_2p {
+  position: absolute;
+  top: 45px;
+  left: 230.5px;
+  width: 70%;
+  height: auto;
+  z-index: 3;
+
+  opacity: 0; /* 처음에 투명 */
+  transition: opacity 0.5s; /* 추가: n초 동안 부드럽게 변화 */
+}
+
+.stage16_control_2p.visible {
+  opacity: 1;
+}

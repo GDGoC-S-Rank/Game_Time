@@ -1,0 +1,35 @@
+1. start scene (1p:Control(Mini cube) 2p: No use)
++ 별을 부수는 장면도 포함
+
+2. heart star (1p: Control(Cube) 2p: Exchange red and blue)
+
+3. the worlds hardest game (1p: Control(wave) 2p: No use)
+
+4. crazy traker (1p: Control(Mini ship) 2p: No use)
++ next, light on blue! 화면 포함
+
+light on blue
+
+5. spikes tend to kill you(1p: Control(Mini cube) 2p: No use)
+
+6. exit path (1p: Control(Mini robot) 2p: No use)
+
++ 처음에 칼 받는 장면 포함
+7. fear less! (1p: Control(Mini cube) 2p: Concentrate on attack)
+
+8. last egg alive (1p: Control(cube) 2p: Use item)
+
+9. click drag type (1p: Turn left 2p: Turn right)
+
+10. pwong (1p: Go left 2p: Go right)
+
+11. town of heaven (1p: Control(Mini robot) 2p: No use)
+ 
+12. anbot (1p: Change saws 2p: No use)
+
+13. Spewer (1p: Control(Cube) 2p: Spew(Float))
+
+14. The I Of It(1p: Control(Wave) 2p: No use)
+
++ Thank you for playing 장면 추가
+15. 가시 4개 넘는 장면

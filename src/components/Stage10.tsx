@@ -1,10 +1,9 @@
 import "./Stage10.css";
 import React, { useState, useEffect } from "react";
 import screenBorder from "../resources/images/screenBorder.png";
-import bgImage from "../resources/images/world/bg.png";
-import control_panel from "../resources/images/fontImg/13.png";
-import control_1p from "../resources/images/fontImg/14.png";
-import control_2p from "../resources/images/fontImg/14.png";
+import bgImage from "../resources/images/drag/bg.png";
+import control_1p from "../resources/images/fontImg/turnL.png";
+import control_2p from "../resources/images/fontImg/TurnR.png";
 import { useKeyEffect2 } from "../hooks/useKeyEffect2";
 
 // Click drag type
@@ -32,7 +31,6 @@ export function Stage10() {
   return (
     <div className="stage10-container">
       <img src={screenBorder} alt="screenBorder" className="screenBorder" />
-      <img src={control_panel} alt="control_panel" className="control_panel" />
       <img
         src={control_1p}
         alt="contral_1p"

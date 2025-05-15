@@ -1,10 +1,18 @@
 import "./Stage8.css";
 import React, { useState, useEffect } from "react";
 import screenBorder from "../resources/images/screenBorder.png";
-import bgImage from "../resources/images/light/bg.png";
-import control_panel from "../resources/images/fontImg/11.png";
-import control_1p from "../resources/images/fontImg/L1p.png";
-import control_2p from "../resources/images/fontImg/L2p.png";
+
+import bgColor from "../resources/images/fear/bg6.png"; // 배경색
+import bgImage1 from "../resources/images/fear/bg6.png"; // 잔디밭
+import bgImage2 from "../resources/images/fear/bg5.png"; // 뒤쪽 잔디밭
+import bgImage3 from "../resources/images/fear/bg1.png"; // 맨 뒤 나무기둥
+import bgImage4 from "../resources/images/fear/bg2.png"; // 청록색 나무
+import bgImage5 from "../resources/images/fear/bg3.png"; // 청록색 풀
+import bgImage6 from "../resources/images/fear/bg4.png"; // 어두운 나무
+
+import control_panel from "../resources/images/fontImg/07.png";
+import control_1p from "../resources/images/fontImg/fear1.png";
+import control_2p from "../resources/images/fontImg/fear2.png";
 import { useKeyEffect } from "../hooks/useKeyEffect";
 
 // Fear Less!
@@ -40,7 +48,13 @@ export function Stage8() {
         alt="contral_2p"
         className={`stage8_control_2p ${isVisible_2p ? "visible" : ""}`}
       />
-      <img src={bgImage} alt="bg" className="stage8-bgImage" />
+      <img src={bgColor} alt="bgcolor" className="stage8-bgcolor" />
+      <img src={bgImage4} alt="bg4" className="stage8-bgImage4" />
+      <img src={bgImage5} alt="bg5" className="stage8-bgImage5" />
+      <img src={bgImage3} alt="bg3" className="stage8-bgImage3" />
+      <img src={bgImage2} alt="bg2" className="stage8-bgImage2" />
+      <img src={bgImage6} alt="bg6" className="stage8-bgImage6" />
+      <img src={bgImage1} alt="bg1" className="stage8-bgImage1" />
     </div>
   );
 }

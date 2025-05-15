@@ -1,10 +1,10 @@
 import "./Stage9.css";
 import React, { useState, useEffect } from "react";
 import screenBorder from "../resources/images/screenBorder.png";
-import bgImage from "../resources/images/light/bg.png";
-import control_panel from "../resources/images/fontImg/11.png";
-import control_1p from "../resources/images/fontImg/L1p.png";
-import control_2p from "../resources/images/fontImg/L2p.png";
+import bgImage1 from "../resources/images/egg/bg1.png";
+import bgImage2 from "../resources/images/egg/bg2.png"; // object
+import control_1p from "../resources/images/fontImg/cube.png";
+import control_2p from "../resources/images/fontImg/useitem.png";
 import { useKeyEffect } from "../hooks/useKeyEffect";
 
 // Last egg alive
@@ -26,11 +26,6 @@ export function Stage9() {
     <div className="stage9-container">
       <img src={screenBorder} alt="screenBorder" className="screenBorder" />
       <img
-        src={control_panel}
-        alt="control_panel"
-        className="stage9_control_panel"
-      />
-      <img
         src={control_1p}
         alt="contral_1p"
         className={`stage9_control_1p ${isVisible_1p ? "visible" : ""}`}
@@ -40,7 +35,8 @@ export function Stage9() {
         alt="contral_2p"
         className={`stage9_control_2p ${isVisible_2p ? "visible" : ""}`}
       />
-      <img src={bgImage} alt="bg" className="stage9-bgImage" />
+      <img src={bgImage1} alt="bg1" className="stage9-bgImage1" />
+      <img src={bgImage2} alt="bg2" className="stage9-bgImage2" />
     </div>
   );
 }

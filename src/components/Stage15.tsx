@@ -1,9 +1,9 @@
 import "./Stage15.css";
 import React, { useState, useEffect } from "react";
 import screenBorder from "../resources/images/screenBorder.png";
-import bgImage from "../resources/images/light/bg.png";
-import control_panel from "../resources/images/fontImg/11.png";
-import control_1p from "../resources/images/fontImg/L1p.png";
+import bgImage from "../resources/images/ofit/bg.png";
+import control_panel from "../resources/images/fontImg/13.png";
+import control_1p from "../resources/images/fontImg/14.png";
 import { useKeyEffect2 } from "../hooks/useKeyEffect2";
 
 // The I Of It

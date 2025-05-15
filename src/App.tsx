@@ -42,4 +42,4 @@ export default function App() {
   );
 }
 
-// 테스트할 때는 그 부분만 주석처리하면 되지..
+// useState 값을 바꿔서 원하는 맵으로 이동하면 되는데 ;;

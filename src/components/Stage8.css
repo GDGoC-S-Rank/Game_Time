@@ -9,22 +9,78 @@
   z-index: -1;
 }
 
-.stage8-bgImage {
-  position: absolute; /* 부모 요소(stage8-container)를 기준으로 배치 */
-  top: 49.8%;
-  left: 50%;
+.stage8-bgcolor {
+  position: absolute;
+  top: -57.9%;
+  left: 210.3%;
   transform: translate(-50%, -50%);
-  width: 70.3%;
-  height: auto; /* 비율 유지 */
-  z-index: 0; /* screenBorder 뒤에 배치 */
+  width: 1230.3%;
+  height: auto;
+  z-index: 0;
+}
+
+.stage8-bgImage1 {
+  /* 맨위의 잔디밭 */
+  position: absolute;
+  top: 52.1%;
+  left: 210.3%;
+  transform: translate(-50%, -50%);
+  width: 390.3%;
+  height: auto;
+  z-index: 0;
 }
 
 .stage8-bgImage2 {
+  /* 뒤쪽의 잔디밭 */
   position: absolute;
-  top: 51.1%;
-  left: 50.5%;
+  top: 50.6%;
+  left: 210.3%;
   transform: translate(-50%, -50%);
-  width: 70.7%;
+  width: 390.3%;
+  height: auto;
+  z-index: 0;
+}
+
+.stage8-bgImage3 {
+  /* 맨뒤 나무기둥 */
+  position: absolute;
+  top: 50.6%;
+  left: 210.3%;
+  transform: translate(-50%, -50%);
+  width: 390.3%;
+  height: auto;
+  z-index: 0;
+}
+
+.stage8-bgImage4 {
+  /* 청록색 나무 */
+  position: absolute;
+  top: 50.6%;
+  left: 210.3%;
+  transform: translate(-50%, -50%);
+  width: 390.3%;
+  height: auto;
+  z-index: 0;
+}
+
+.stage8-bgImage5 {
+  /* 청록색 풀 */
+  position: absolute;
+  top: 50.6%;
+  left: 210.3%;
+  transform: translate(-50%, -50%);
+  width: 390.3%;
+  height: auto;
+  z-index: 0;
+}
+
+.stage8-bgImage6 {
+  /* 어두운 나무 */
+  position: absolute;
+  top: 50.6%;
+  left: 210.3%;
+  transform: translate(-50%, -50%);
+  width: 390.3%;
   height: auto;
   z-index: 0;
 }
@@ -38,23 +94,22 @@
 /* control 부분 ------------------------------------ */
 .stage8_control_panel {
   position: absolute;
-  width: 70%;
+  width: 70.6%;
   height: auto;
   z-index: 3;
-  left: 230.3px;
+  left: 231.5px;
   top: 45px;
 }
 
 .stage8_control_1p {
   position: absolute;
   top: 45px;
-  left: 230.7px;
-  width: 70%;
+  left: 231.8px;
+  width: 70.4%;
   height: auto;
   z-index: 3;
-
-  opacity: 0; /* 처음에 투명 */
-  transition: opacity 0.5s; /* 추가: n초 동안 부드럽게 변화 */
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
 .stage8_control_1p.visible {
@@ -65,12 +120,11 @@
   position: absolute;
   top: 45px;
   left: 230.5px;
-  width: 70%;
+  width: 70.7%;
   height: auto;
   z-index: 3;
-
-  opacity: 0; /* 처음에 투명 */
-  transition: opacity 0.5s; /* 추가: n초 동안 부드럽게 변화 */
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
 .stage8_control_2p.visible {

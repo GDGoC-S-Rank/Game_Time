@@ -1,10 +1,11 @@
 import "./Stage11.css";
 import React, { useState, useEffect } from "react";
 import screenBorder from "../resources/images/screenBorder.png";
-import bgImage from "../resources/images/world/bg.png";
-import control_panel from "../resources/images/fontImg/13.png";
-import control_1p from "../resources/images/fontImg/14.png";
-import control_2p from "../resources/images/fontImg/14.png";
+import bgImage from "../resources/images/black.png";
+import bgImage2 from "../resources/images/pwong/w1.png";
+import control_panel from "../resources/images/fontImg/01.png";
+import control_1p from "../resources/images/fontImg/goleft.png";
+import control_2p from "../resources/images/fontImg/goright.png";
 import { useKeyEffect2 } from "../hooks/useKeyEffect2";
 
 // Pwong
@@ -44,6 +45,7 @@ export function Stage11() {
         className={`stage11_control_2p ${isVisible_2p ? "visible" : ""}`}
       />
       <img src={bgImage} alt="bg" className="stage11-bgImage" />
+      <img src={bgImage2} alt="bg2" className="stage11-bgImage2" />
     </div>
   );
 }

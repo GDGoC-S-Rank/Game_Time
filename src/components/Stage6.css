@@ -1,6 +1,6 @@
 .stage6-container {
-  width: 100vw; /* 화면 전체 너비 */
-  height: 100vh; /* 화면 전체 높이 */
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,22 +9,12 @@
   z-index: -1;
 }
 
-.stage6-bgImage {
-  position: absolute; /* 부모 요소(stage6-container)를 기준으로 배치 */
-  top: 49.8%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70.3%;
-  height: auto; /* 비율 유지 */
-  z-index: 0; /* screenBorder 뒤에 배치 */
-}
-
-.stage6-bgImage2 {
+.stage6-bgImage1 {
   position: absolute;
-  top: 51.1%;
-  left: 50.5%;
+  top: 54.7%;
+  left: 51.7%;
   transform: translate(-50%, -50%);
-  width: 70.7%;
+  width: 73.5%;
   height: auto;
   z-index: 0;
 }

@@ -9,22 +9,22 @@
   z-index: -1;
 }
 
-.stage9-bgImage {
-  position: absolute; /* 부모 요소(stage9-container)를 기준으로 배치 */
-  top: 49.8%;
-  left: 50%;
+.stage9-bgImage1 {
+  position: absolute;
+  top: 51.2%;
+  left: 50.4%;
   transform: translate(-50%, -50%);
-  width: 70.3%;
-  height: auto; /* 비율 유지 */
-  z-index: 0; /* screenBorder 뒤에 배치 */
+  width: 70.9%;
+  height: auto;
+  z-index: 0;
 }
 
 .stage9-bgImage2 {
   position: absolute;
-  top: 51.1%;
-  left: 50.5%;
+  top: 49.8%;
+  left: 277.9%;
   transform: translate(-50%, -50%);
-  width: 70.7%;
+  width: 513.5%;
   height: auto;
   z-index: 0;
 }
@@ -47,30 +47,27 @@
 
 .stage9_control_1p {
   position: absolute;
-  top: 45px;
-  left: 230.7px;
-  width: 70%;
+  top: 43px;
+  left: 228.6px;
+  width: 70.6%;
   height: auto;
   z-index: 3;
-
-  opacity: 0; /* 처음에 투명 */
-  transition: opacity 0.5s; /* 추가: n초 동안 부드럽게 변화 */
+  opacity: 0;
+  transition: opacity 0.5s;
 }
-
 .stage9_control_1p.visible {
   opacity: 1;
 }
 
 .stage9_control_2p {
   position: absolute;
-  top: 45px;
-  left: 230.5px;
-  width: 70%;
+  top: 43.2px;
+  left: 230.4px;
+  width: 70.6%;
   height: auto;
   z-index: 3;
-
-  opacity: 0; /* 처음에 투명 */
-  transition: opacity 0.5s; /* 추가: n초 동안 부드럽게 변화 */
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
 .stage9_control_2p.visible {

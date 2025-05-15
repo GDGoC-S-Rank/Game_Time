@@ -8,17 +8,12 @@ import { useKeyEffect } from "../hooks/useKeyEffect";
 // Start Scene(Space is key)
 export function Stage1() {
   const [isVisible_1p, setIsVisible_1p] = useState(false);
-  // const [isVisible_2p, setIsVisible_2p] = useState(false);
 
   useKeyEffect((key) => {
     if (key === "Space") {
       setIsVisible_1p(true);
       setTimeout(() => setIsVisible_1p(false), 300);
     }
-    // else if (key === "ArrowUp") {
-    //   setIsVisible_2p(true);
-    //   setTimeout(() => setIsVisible_2p(false), 300);
-    // }
   });
 
   return (

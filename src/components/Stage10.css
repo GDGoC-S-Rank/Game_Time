@@ -19,16 +19,6 @@
   z-index: 0; /* screenBorder 뒤에 배치 */
 }
 
-.stage10-bgImage2 {
-  position: absolute;
-  top: 51.1%;
-  left: 50.5%;
-  transform: translate(-50%, -50%);
-  width: 70.7%;
-  height: auto;
-  z-index: 0;
-}
-
 .screenBorder {
   width: auto;
   height: 100%;
@@ -47,14 +37,13 @@
 
 .stage10_control_1p {
   position: absolute;
-  top: 45px;
-  left: 230.7px;
+  top: 43.9px;
+  left: 229.2px;
   width: 70%;
   height: auto;
   z-index: 3;
-
-  opacity: 0; /* 처음에 투명 */
-  transition: opacity 0.5s; /* 추가: n초 동안 부드럽게 변화 */
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
 .stage10_control_1p.visible {
@@ -63,14 +52,13 @@
 
 .stage10_control_2p {
   position: absolute;
-  top: 45px;
-  left: 230.5px;
+  top: 44px;
+  left: 231.3px;
   width: 70%;
   height: auto;
   z-index: 3;
-
-  opacity: 0; /* 처음에 투명 */
-  transition: opacity 0.5s; /* 추가: n초 동안 부드럽게 변화 */
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
 .stage10_control_2p.visible {

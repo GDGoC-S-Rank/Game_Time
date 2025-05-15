@@ -1,9 +1,9 @@
 import "./Stage12.css";
 import React, { useState, useEffect } from "react";
 import screenBorder from "../resources/images/screenBorder.png";
-import bgImage from "../resources/images/light/bg.png";
-import control_panel from "../resources/images/fontImg/11.png";
-import control_1p from "../resources/images/fontImg/L1p.png";
+import bgImage from "../resources/images/tower/bg.png";
+import control_panel from "../resources/images/fontImg/09.png";
+import control_1p from "../resources/images/fontImg/10.png";
 import { useKeyEffect2 } from "../hooks/useKeyEffect2";
 
 // Tower of heaven

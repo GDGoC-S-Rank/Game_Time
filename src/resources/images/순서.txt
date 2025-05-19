@@ -26,6 +26,7 @@ light on blue
 11. town of heaven (1p: Control(Mini robot) 2p: No use)
  
 12. anbot (1p: Change saws 2p: No use)
+go up / do down
 
 13. Spewer (1p: Control(Cube) 2p: Spew(Float))
 
@@ -33,3 +34,22 @@ light on blue
 
 + Thank you for playing 장면 추가
 15. 가시 4개 넘는 장면
+
+
+      {stage === 1 && <Stage1 />} {/* Start Scene(Space is key) */}
+      {stage === 2 && <Stage2 />} {/* Heart Star */}
+      {stage === 3 && <Stage3 />} {/* The Worlds Hardest Game */}
+      {stage === 4 && <Stage4 />} {/* Crazy Traker */}
+      {stage === 5 && <Stage5 />} {/* Light On Blue */}
+      {stage === 6 && <Stage6 />} {/* Spikes tend to kill you */}
+      {stage === 7 && <Stage7 />} {/* Exit path */}
+      {stage === 8 && <Stage8 />} {/* Fear Less! */}
+      {stage === 9 && <Stage9 />} {/* Last egg alive */}
+      {stage === 10 && <Stage10 />} {/* Click drag type */}
+      {stage === 11 && <Stage11 />} {/* pwong */}
+      {stage === 12 && <Stage12 />} {/* Tower of heaven */}
+      {stage === 13 && <Stage13 />} {/* anbot */}
+      {stage === 14 && <Stage14 />} {/* Spewer */}
+      {stage === 15 && <Stage15 />} {/* The I Of It */}
+      {stage === 16 && <Stage16 />} {/* End Scene */}
+

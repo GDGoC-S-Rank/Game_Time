@@ -1,21 +1,21 @@
 import "./App.css";
 import { useState } from "react";
-import { Stage1 } from "./components/Stage1";
-import { Stage2 } from "./components/Stage2";
-import { Stage3 } from "./components/Stage3";
-import { Stage4 } from "./components/Stage4";
-import { Stage5 } from "./components/Stage5";
-import { Stage6 } from "./components/Stage6";
-import { Stage7 } from "./components/Stage7";
-import { Stage8 } from "./components/Stage8";
-import { Stage9 } from "./components/Stage9";
-import { Stage10 } from "./components/Stage10";
-import { Stage11 } from "./components/Stage11";
-import { Stage12 } from "./components/Stage12";
-import { Stage13 } from "./components/Stage13";
-import { Stage14 } from "./components/Stage14";
-import { Stage15 } from "./components/Stage15";
-import { Stage16 } from "./components/Stage16";
+import { Stage1 } from "./scenes/Stage1";
+import { Stage2 } from "./scenes/Stage2";
+import { Stage3 } from "./scenes/Stage3";
+import { Stage4 } from "./scenes/Stage4";
+import { Stage5 } from "./scenes/Stage5";
+import { Stage6 } from "./scenes/Stage6";
+import { Stage7 } from "./scenes/Stage7";
+import { Stage8 } from "./scenes/Stage8";
+import { Stage9 } from "./scenes/Stage9";
+import { Stage10 } from "./scenes/Stage10";
+import { Stage11 } from "./scenes/Stage11";
+import { Stage12 } from "./scenes/Stage12";
+import { Stage13 } from "./scenes/Stage13";
+import { Stage14 } from "./scenes/Stage14";
+import { Stage15 } from "./scenes/Stage15";
+import { Stage16 } from "./scenes/Stage16";
 
 export default function App() {
   const [stage, setStage] = useState(1);

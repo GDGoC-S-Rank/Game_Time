@@ -1,0 +1,75 @@
+.stage9-container {
+  width: 100vw; /* 화면 전체 너비 */
+  height: 100vh; /* 화면 전체 높이 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkblue;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.stage9-bgImage1 {
+  position: absolute;
+  top: 51.2%;
+  left: 50.4%;
+  transform: translate(-50%, -50%);
+  width: 70.9%;
+  height: auto;
+  z-index: 0;
+}
+
+.stage9-bgImage2 {
+  position: absolute;
+  top: 49.8%;
+  left: 277.9%;
+  transform: translate(-50%, -50%);
+  width: 513.5%;
+  height: auto;
+  z-index: 0;
+}
+
+.screenBorder {
+  width: auto;
+  height: 100%;
+  z-index: 2;
+}
+
+/* control 부분 ------------------------------------ */
+.stage9_control_panel {
+  position: absolute;
+  width: 70%;
+  height: auto;
+  z-index: 3;
+  left: 230.3px;
+  top: 45px;
+}
+
+.stage9_control_1p {
+  position: absolute;
+  top: 43px;
+  left: 228.6px;
+  width: 70.6%;
+  height: auto;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.stage9_control_1p.visible {
+  opacity: 1;
+}
+
+.stage9_control_2p {
+  position: absolute;
+  top: 43.2px;
+  left: 230.4px;
+  width: 70.6%;
+  height: auto;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.stage9_control_2p.visible {
+  opacity: 1;
+}

@@ -1,0 +1,76 @@
+.stage7-container {
+  width: 100vw; /* 화면 전체 너비 */
+  height: 100vh; /* 화면 전체 높이 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkblue;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.stage7-bgImage {
+  position: absolute;
+  top: 56.1%;
+  left: 297.1%;
+  transform: translate(-50%, -50%);
+  width: 564%;
+  height: auto;
+  z-index: 0;
+}
+
+.stage7-bgImage2 {
+  position: absolute;
+  top: 56.1%;
+  left: 297.1%;
+  transform: translate(-50%, -50%);
+  width: 564%;
+  height: auto;
+  z-index: 0;
+}
+
+.screenBorder {
+  width: auto;
+  height: 100%;
+  z-index: 2;
+}
+
+/* control 부분 ------------------------------------ */
+.stage7_control_panel {
+  position: absolute;
+  width: 70%;
+  height: auto;
+  z-index: 3;
+  left: 230.3px;
+  top: 45px;
+}
+
+.stage7_control_1p {
+  position: absolute;
+  top: 45px;
+  left: 231px;
+  width: 70.6%;
+  height: auto;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.stage7_control_1p.visible {
+  opacity: 1;
+}
+
+.stage7_control_2p {
+  position: absolute;
+  top: 45px;
+  left: 230.5px;
+  width: 70%;
+  height: auto;
+  z-index: 3;
+
+  opacity: 0; /* 처음에 투명 */
+  transition: opacity 0.5s; /* 추가: n초 동안 부드럽게 변화 */
+}
+
+.stage7_control_2p.visible {
+  opacity: 1;
+}

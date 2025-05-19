@@ -1,0 +1,43 @@
+.stage3-container {
+  width: 100vw; /* 화면 전체 너비 */
+  height: 100vh; /* 화면 전체 높이 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkblue;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.stage3-bgImage {
+  position: absolute; /* 부모 요소(stage1-container)를 기준으로 배치 */
+  top: 55.9%;
+  left: 228.9%;
+  transform: translate(-50%, -50%);
+  width: 427.4%;
+  height: auto; /* 비율 유지 */
+  z-index: 0; /* screenBorder 뒤에 배치 */
+}
+
+.screenBorder {
+  width: auto;
+  height: 100%;
+  z-index: 2;
+}
+
+/* control 부분 ------------------------------------ */
+.stage3_control_1p {
+  position: absolute;
+  top: 45.8px;
+  left: 231.2px;
+  width: 70.5%;
+  height: auto;
+  z-index: 3;
+
+  opacity: 0; /* 처음에 투명 */
+  transition: opacity 0.5s; /* 추가: n초 동안 부드럽게 변화 */
+}
+
+.stage3_control_1p.visible {
+  opacity: 1;
+}
